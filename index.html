@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pratik Yabaji | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://kit.fontawesome.com/79f75f2740.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <section id="header">
+        <nav class="navBar">
+            <div class="port">
+                Pra<span>tik</span>
+            </div>
+            <ul>
+                <i onclick="hideNav()" class="fa-solid fa-xmark"></i>
+                <li><a onclick="hideNav()" href="#">H<span>o</span>me</a></li>
+                <li><a onclick="hideNav()" href="#">Ab<span>o</span>ut Us</a></li>
+                <li><a onclick="hideNav()" href="#">Ser<span>v</span>ices</a></li>
+                <li><a onclick="hideNav()" href="#">Sk<span>i</span>lls</a></li>
+                <li><a onclick="hideNav()" href="#">Con<span>t</span>act Us</a></li>
+            </ul>
+            <a class="Subscribe" href="#">Subscribe</a>
+            <i onclick="showNav()" class="fa-solid fa-bars"></i>
+        </nav>
+        <div class="hero_content">
+            <h1>Hello, my name is</h1>
+            <h1>Pratik<span> Yabaji</span></h1>
+            <h1>I'am a Web Developer.</h1>
+
+            <div class="newslatter">
+                <form>
+                    <input type="email" name="email" id="mail" placeholder="Enter Your Email">
+                    <input type="submit" name="submit" value="Lets Start">
+                </form>
+            </div>
+        </div>
+    </section>
+    <section id="about">
+        <div class="aboutme">
+            <img src="/main/img/main-img.png" alt="">
+            <div class="aboutmeinfo">
+                <h1>About Me</h1>
+                <h2>Developer <span>& Artist</span></h2>
+                <p>I am a front-end web developer.I am also an Artist who loves painting and other Drawing stuff.I
+                    started my web dev journy few days ago and now I can provide you more & more interactive web
+                    appications with A responsive design.A responsive design makes your website accessible to all users,
+                    regardless of their device.
+                </p>
+                <a href="#">Let's Talk</a>
+            </div>
+        </div>
+    </section>
+    <section id="services">
+        <h1 class="ourserviceh1">Our Services</h1>
+        <div class="servicesoptions">
+            <div class="servicebox sb-1">
+                <img src="/main/img/icons8-menu-50.png" alt="">
+                <h1>Web Development</h1>
+                <p>Every website should be built with two primary goals: Firstly, it needs to work across all devices.
+                    Secondly, it needs to be fast as possible.</p>
+                <a href="#">Read More</a>
+            </div>
+
+            <div class="servicebox sb-2">
+                <i class="fa-solid fa-user"></i>
+                <h1>Web Development</h1>
+                <p>Every website should be built with two primary goals: Firstly, it needs to work across all devices.
+                    Secondly, it needs to be fast as possible.</p>
+                <a href="#">Read More</a>
+            </div>
+
+            <div class="servicebox sb-3">
+                <i class="fa-solid fa-bell"></i>
+                <h1>Web Development</h1>
+                <p>Every website should be built with two primary goals: Firstly, it needs to work across all devices.
+                    Secondly, it needs to be fast as possible.</p>
+                <a href="#">Read More</a>
+            </div>
+        </div>
+    </section>
+    <section id="beautifulW">
+        <h1>Let Me Get You A Beautiful Website.</h1>
+        <a href="#">Hire Me</a>
+    </section>
+    <footer>
+        <div class="footer_main">
+            <h1>Pratik Yabaji</h1>
+            <h2>To built Your own website contact me on my social media <br> - please click on the link below</h2>
+            <div class="icons-media">
+                <i class="fa-brands fa-facebook-f"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-github"></i>
+            </div>
+        </div>
+        <p>CopyRight © By Pratik Yabaji 2022</p>
+    </footer>
+    <script>
+        function showNav() {
+            const navBar = document.querySelector('.navBar');
+            navBar.classList.toggle('activeNav');
+        }
+        function hideNav() {
+            const navBar = document.querySelector('.navBar');
+            navBar.classList.remove('activeNav');
+        }
+    </script>
+</body>
+
+</html>
