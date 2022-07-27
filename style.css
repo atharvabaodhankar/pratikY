@@ -56,6 +56,9 @@ nav ul li a:hover {
 .fa-bars, .fa-xmark {
     display: none;
 }
+#xmark , #bars{
+    display: none;
+}
 
 .Subscribe {
     font-size: 1.6rem;
@@ -479,7 +482,9 @@ footer p{
     nav ul li a span {
         color: #0091f9;
     }
-
+    #xmark , #bars {
+        display:block;
+    }
     .fa-xmark {
         display: block;
         font-size: 5rem;
