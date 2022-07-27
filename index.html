@@ -15,28 +15,30 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
         integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/79f75f2740.js" crossorigin="anonymous"></script>
 
 </head>
 
-<body>
+<body data-bs-spy="scroll" data-bs-target="#EpicNavbar" data-offset="0">
     <section id="header">
-        <nav class="navBar">
+        <nav id="EpicNavbar" class="navBar">
             <div class="port">
                 Pra<span>tik</span>
             </div>
             <ul>
                 <i onclick="hideNav()" class="fa-solid fa-xmark"></i>
-                <li><a onclick="hideNav()" href="#">H<span>o</span>me</a></li>
-                <li><a onclick="hideNav()" href="#">Ab<span>o</span>ut Us</a></li>
-                <li><a onclick="hideNav()" href="#">Ser<span>v</span>ices</a></li>
-                <li><a onclick="hideNav()" href="#">Sk<span>i</span>lls</a></li>
-                <li><a onclick="hideNav()" href="#">Con<span>t</span>act Us</a></li>
+                <li><a onclick="hideNav()" href="#home">H<span>o</span>me</a></li>
+                <li><a onclick="hideNav()" href="#about ">Ab<span>o</span>ut Us</a></li>
+                <li><a onclick="hideNav()" href="#services">Ser<span>v</span>ices</a></li>
+                <li><a onclick="hideNav()" href="#about">Sk<span>i</span>lls</a></li>
+                <li><a onclick="hideNav()" href="#home">Con<span>t</span>act Us</a></li>
             </ul>
             <a class="Subscribe" href="#">Subscribe</a>
             <i onclick="showNav()" class="fa-solid fa-bars"></i>
         </nav>
-        <div class="hero_content">
+        <div id="home" class="hero_content">
             <h1>Hello, my name is</h1>
             <h1>Pratik<span> Yabaji</span></h1>
             <h1>I'am a Web Developer.</h1>
@@ -108,6 +110,15 @@
         </div>
         <p>CopyRight © By Pratik Yabaji 2022</p>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+        integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js"
+        integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK"
+        crossorigin="anonymous"></script>
     <script>
         function showNav() {
             const navBar = document.querySelector('.navBar');
